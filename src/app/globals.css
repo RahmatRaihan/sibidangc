@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #1E40AF;
+    --color-secondary: #16A34A;
+    --color-accent: #EA580C;
+    --color-background: #F8FAFC;
+    --color-card: #FFFFFF;
+    --color-text-primary: #1E293B;
+    --color-text-secondary: #64748B;
+    --color-border: #E2E8F0;
+    --color-error: #DC2626;
+    --color-warning: #D97706;
+  }
+
+  .dark {
+    --color-primary: #3B82F6;
+    --color-secondary: #22C55E;
+    --color-accent: #F97316;
+    --color-background: #0F172A;
+    --color-card: #1E293B;
+    --color-text-primary: #F8FAFC;
+    --color-text-secondary: #94A3B8;
+    --color-border: #334155;
+    --color-error: #EF4444;
+    --color-warning: #F59E0B;
+  }
+
+  body {
+    @apply bg-background text-textPrimary font-sans antialiased transition-colors duration-200;
+  }
+}
