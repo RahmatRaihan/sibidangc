@@ -32,12 +32,11 @@ export default function PublicLayout({
   return (
     <div className="flex min-h-screen flex-col bg-background font-sans text-textPrimary overflow-x-hidden">
       {/* Navbar */}
-      <header 
-        className={`fixed top-0 z-40 w-full transition-all duration-300 ${
-          isScrolled 
-            ? 'border-b border-border bg-white/70 backdrop-blur-md shadow-sm py-0' 
-            : 'bg-white border-transparent py-2'
-        }`}
+      <header
+        className={`fixed top-0 z-40 w-full transition-all duration-300 ${isScrolled
+          ? 'border-b border-border bg-white/70 backdrop-blur-md shadow-sm py-0'
+          : 'bg-white border-transparent py-2'
+          }`}
       >
         <div className="container mx-auto px-4 md:px-8">
           <div className="flex h-16 items-center justify-between">
@@ -58,17 +57,16 @@ export default function PublicLayout({
                 <Link
                   key={link.path}
                   href={link.path}
-                  className={`text-sm font-medium transition-colors hover:text-primary ${
-                    pathname === link.path ? 'text-primary' : 'text-textSecondary'
-                  }`}
+                  className={`text-sm font-medium transition-colors hover:text-primary ${pathname === link.path ? 'text-primary' : 'text-textSecondary'
+                    }`}
                 >
                   {link.name}
                 </Link>
               ))}
               <div className="flex items-center gap-3">
-                <a 
-                  href="https://asndigital.bkn.go.id/" 
-                  target="_blank" 
+                <a
+                  href="https://asndigital.bkn.go.id/"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="rounded-md bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-transform hover:scale-105 hover:bg-blue-700"
                 >
@@ -101,16 +99,15 @@ export default function PublicLayout({
                   key={link.path}
                   href={link.path}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`text-sm font-medium ${
-                    pathname === link.path ? 'text-primary' : 'text-textSecondary'
-                  }`}
+                  className={`text-sm font-medium ${pathname === link.path ? 'text-primary' : 'text-textSecondary'
+                    }`}
                 >
                   {link.name}
                 </Link>
               ))}
-              <a 
-                href="https://asndigital.bkn.go.id/" 
-                target="_blank" 
+              <a
+                href="https://asndigital.bkn.go.id/"
+                target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="mt-2 rounded-md bg-blue-600 py-2 text-center text-sm font-semibold text-white shadow-sm"
@@ -145,17 +142,17 @@ export default function PublicLayout({
       </main>
 
       {/* Footer */}
-      <footer className="bg-primary py-8 text-white">
+      <footer className="bg-primary py-6 text-white">
         <div className="container mx-auto px-4 md:px-8">
-          <div className="grid gap-8 text-center md:grid-cols-3">
+          <div className="grid gap-6 text-center md:grid-cols-3">
             <div className="flex flex-col items-center">
-              <h3 className="mb-4 text-lg font-bold">Portal Bidang C</h3>
+              <h3 className="mb-2 text-lg font-bold">Portal Bidang C</h3>
               <p className="max-w-xs text-sm text-blue-100">
                 Sistem Informasi Syarat & Ketentuan Pelayanan Bidang Diklat, Pengembangan Pegawai, dan Disiplin.
               </p>
             </div>
             <div className="flex flex-col items-center">
-              <h3 className="mb-4 text-lg font-bold">Tautan Cepat</h3>
+              <h3 className="mb-2 text-lg font-bold">Tautan Cepat</h3>
               <ul className="space-y-2 text-sm text-blue-100">
                 <li><Link href="/informasi" className="hover:text-white">Persyaratan Layanan</Link></li>
                 <li><Link href="/berita" className="hover:text-white">Berita & Pengumuman</Link></li>
@@ -164,7 +161,7 @@ export default function PublicLayout({
               </ul>
             </div>
             <div className="flex flex-col items-center">
-              <h3 className="mb-4 text-lg font-bold">Kontak</h3>
+              <h3 className="mb-2 text-lg font-bold">Kontak</h3>
               <ul className="space-y-2 text-sm text-blue-100">
                 <li>Kantor BKPSDM Kab. Mempawah</li>
                 <li>Telp: (0561) 123456</li>
@@ -172,9 +169,9 @@ export default function PublicLayout({
               </ul>
             </div>
           </div>
-          <div className="mt-8 flex flex-col items-center border-t border-blue-800 pt-8 text-center text-sm text-blue-200">
+          <div className="mt-6 flex flex-col items-center border-t border-blue-800 pt-6 text-center text-sm text-blue-200">
             <span>&copy; {new Date().getFullYear()} BKPSDM Kabupaten Mempawah. Hak Cipta Dilindungi.</span>
-            <span className="mt-1">Developed by Rahmat Raihan B</span>
+            <span className="mt-1">Developed by Thira</span>
           </div>
         </div>
       </footer>

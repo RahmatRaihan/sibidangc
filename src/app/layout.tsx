@@ -3,7 +3,7 @@ import { Toaster } from 'react-hot-toast';
 import Providers from '@/components/Providers';
 
 export const metadata = {
-  title: 'Portal Bidang C',
+  title: 'Portal Bidang C BKPSDM Kab Mempawah',
   description: 'Sistem Informasi Layanan Kepegawaian BKPSDM Kabupaten Mempawah',
 };
 
