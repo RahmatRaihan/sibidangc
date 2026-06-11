@@ -45,6 +45,9 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
   }, [index, onComplete]);
 
   useEffect(() => {
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
     // Pastikan scroll berada di atas
     window.scrollTo(0, 0);
     // Kunci scrollbar browser selama loading aktif agar user tidak bisa scroll
