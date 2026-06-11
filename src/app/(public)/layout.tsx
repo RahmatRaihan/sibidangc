@@ -47,7 +47,7 @@ export default function PublicLayout({
               </div>
               <div>
                 <h1 className="text-lg font-bold leading-tight text-primary">Portal Bidang C</h1>
-                <p className="text-[10px] font-medium tracking-wide text-textSecondary uppercase">Kabupaten Mempawah</p>
+                <p className="text-[10px] font-medium tracking-wide text-textSecondary uppercase">BKPSDM Kab Mempawah</p>
               </div>
             </Link>
 
