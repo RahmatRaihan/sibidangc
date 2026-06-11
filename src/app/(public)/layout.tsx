@@ -65,11 +65,21 @@ export default function PublicLayout({
                   {link.name}
                 </Link>
               ))}
-              <Link href="/admin"
-                className="rounded-md bg-primary px-4 py-2 text-sm font-semibold text-white shadow-sm transition-transform hover:scale-105 hover:bg-primary/90"
-              >
-                Login Admin
-              </Link>
+              <div className="flex items-center gap-3">
+                <a 
+                  href="https://asndigital.bkn.go.id/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="rounded-md bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-transform hover:scale-105 hover:bg-blue-700"
+                >
+                  Ke ASN Digital
+                </a>
+                <Link href="/admin"
+                  className="rounded-md bg-slate-800 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-transform hover:scale-105 hover:bg-slate-700"
+                >
+                  Login Admin
+                </Link>
+              </div>
             </nav>
 
             {/* Mobile Menu Button */}
@@ -98,9 +108,18 @@ export default function PublicLayout({
                   {link.name}
                 </Link>
               ))}
+              <a 
+                href="https://asndigital.bkn.go.id/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="mt-2 rounded-md bg-blue-600 py-2 text-center text-sm font-semibold text-white shadow-sm"
+              >
+                Ke ASN Digital
+              </a>
               <Link href="/admin"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="mt-2 rounded-md bg-primary py-2 text-center text-sm font-semibold text-white shadow-sm"
+                className="mt-2 rounded-md bg-slate-800 py-2 text-center text-sm font-semibold text-white shadow-sm"
               >
                 Login Admin
               </Link>
